@@ -1,9 +1,10 @@
 # VISPERS-Wireframe-Protocol
 
-[![CI Status](http://img.shields.io/travis/Jan Bartel/VISPERS-Wireframe-Protocol.svg?style=flat)](https://travis-ci.org/Jan Bartel/VISPERS-Wireframe-Protocol)
-[![Version](https://img.shields.io/cocoapods/v/VISPERS-Wireframe-Protocol.svg?style=flat)](http://cocoapods.org/pods/VISPERS-Wireframe-Protocol)
 [![License](https://img.shields.io/cocoapods/l/VISPERS-Wireframe-Protocol.svg?style=flat)](http://cocoapods.org/pods/VISPERS-Wireframe-Protocol)
 [![Platform](https://img.shields.io/cocoapods/p/VISPERS-Wireframe-Protocol.svg?style=flat)](http://cocoapods.org/pods/VISPERS-Wireframe-Protocol)
+
+
+The wireframe is the powerful thing that wires the view controllers in your app together. It takes an NSURL and some parameters, talks to the components that create your view controllers (the ControllerProvider) which create the view controller connected to this URL, and gives it to those components which are responsible for presenting your controller (the ControllerRoutingPresenter).
 
 ## Usage
 
