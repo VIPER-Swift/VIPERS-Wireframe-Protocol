@@ -8,6 +8,8 @@ The wireframe is the powerful thing that wires the view controllers in your VISP
 
 The wireframe is responsible for navigating to the next view controller and communicates with the presenter layer.
 
+![VIPER Architecture]
+(https://raw.githubusercontent.com/VIPER-Swift/VISPERS-Wireframe-Protocol/master/Example/VISPERS-Wireframe-Protocol/viper-architecture.png)
 
 ## Usage
 
