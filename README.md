@@ -6,7 +6,7 @@
 
 The wireframe is the powerful thing that wires the view controllers in your VISPERS app together. It takes an NSURL and some parameters, talks to the components that create your view controllers (the ControllerProvider) which create the view controller connected to this URL, and gives it to those components which are responsible for presenting your controller (the ControllerRoutingPresenter).
 
-The wireframe is responsible for navigating to the next view controller and communicates with the presenter layer.
+The wireframe is responsible for navigating to the next view controller and communicates with the presenter layer. We recommend you to avoid using it in a view controller which is located in the view layer. It is better to use it in a delegate.
 
 ![VIPER Architecture]
 (https://raw.githubusercontent.com/VIPER-Swift/VISPERS-Wireframe-Protocol/master/Example/VISPERS-Wireframe-Protocol/viper-architecture.png)
