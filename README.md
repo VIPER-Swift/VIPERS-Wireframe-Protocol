@@ -54,6 +54,13 @@ wireframe.routeURL(       URL: NSURL(string:"/path/to/my/controller"),
 
 ```
 
+### Routing option
+
+A routing option specifies how a controller is presented.
+You can create new routing options to implement new ways of presenting a view controller. It is more or less a message object to a specific ControllerRoutingPresenter, which aggregates the information nessecary to present the controller with a ControllerRoutingPresenter.  
+
+You can find a full example in the ControllerRoutingPresenter section.
+
 ### Routing option provider
 
 A routing option provider is responsible for creating a RoutingOption 
@@ -92,7 +99,7 @@ wireframe.addRoutingProvider(provider:myProvider)
 // route somewhere
 //
 
-//route to controller and present it
+//route to controller and push it
 wireframe.routeURL(        URL: NSURL(string:"/path/to/my/controller"),
                     parameters: nil,
                         option: nil)

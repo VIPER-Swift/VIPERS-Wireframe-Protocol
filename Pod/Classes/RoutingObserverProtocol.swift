@@ -18,5 +18,5 @@ public protocol RoutingObserverProtocol{
                       option: RoutingOptionProtocol,
                   parameters: [String : AnyObject],
             routingPresenter: ControllerRoutingPresenterProtocol,
-                   wireframe: WireframeProtocol)
+                   wireframe: WireframeProtocol) -> NSURL?
 }
