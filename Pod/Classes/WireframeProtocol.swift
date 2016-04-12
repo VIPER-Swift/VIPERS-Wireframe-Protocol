@@ -70,7 +70,8 @@ public protocol WireframeProtocol{
 
 
     /**
-     * ControllerProvider: a provider creating a view controller for a specific URL
+     * ControllerProvider: a provider reponsible for creating a view controller 
+     * for a specific URL
      **/
 
 

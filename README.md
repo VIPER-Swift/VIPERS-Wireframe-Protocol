@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/cocoapods/l/VISPERS-Wireframe-Protocol.svg?style=flat)](http://cocoapods.org/pods/VISPERS-Wireframe-Protocol)
 [![Platform](https://img.shields.io/cocoapods/p/VISPERS-Wireframe-Protocol.svg?style=flat)](http://cocoapods.org/pods/VISPERS-Wireframe-Protocol)
 
-The wireframe layer in an VIPER-Application is used to create and to present view controllers and controller transitions. A VIPERS application uses an object conforming to the WireframeProtocol to navigate between the controllers of your app.   
+The wireframe layer in an VIPER-Application is used to create and to present view controllers and controller transitions. A VIPERS application uses an object conforming to the WireframeProtocol to route between the controllers of your app.   
 
 It is the powerful thing that wires the view controllers in your app together. It takes an NSURL and some parameters, talks to the components that create your view controllers (the ControllerProvider) which create the view controller connected to this URL, and gives it to those components which are responsible for presenting your controller (the ControllerRoutingPresenter).
 
@@ -15,6 +15,44 @@ The wireframe is responsible for navigating to the next view controller and comm
 ## More about VIPER
 VIPER is an application architecture for mobile app development.
 You can find some explanations here: [Blogpost from objc.io] (https://www.objc.io/issues/13-architecture/viper/)  (It's example is written in OBJ-C but I think you will accept this as your next challenge :-P)
+
+##Short explanation of the players in the wireframe layer
+
+### ControllerProvider
+
+A provider-class reponsible for creating a view controller for a specific URL
+
+Example:
+```swift
+class ExampleControllerProvider : {
+    
+    let responsibleForRoutesCreatedWithRouteString = "/path/to/my/controller"
+
+    func controller( forRouteString : String,
+                              option: RoutingOptionProtocol,
+                          parameters: [String:AnyObject]) -> UIViewController?{
+
+        if(forRouteString == self.responsibleForRoutesCreatedWithRouteString){
+            return UIViewController()
+        }else{
+            return nil
+        }
+
+    }
+    
+}
+
+// somewhere in your application (appdelegate or a factory could be a good idea)
+// add provider to wireframe 
+let myProvider = ExampleControllerProvider()
+wireframe.addControllerProvider(provider:myProvider)
+
+//route to controller and present it
+wireframe.routeURL(       URL: NSURL(string:"/path/to/my/controller"),
+                   parameters: nil,
+                       option: RoutingOptionPush())
+
+```
 
 ## Usage
 
