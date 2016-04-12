@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "VISPERS-Wireframe-Protocol_Example.app"
-               BlueprintName = "VISPERS-Wireframe-Protocol_Example"
-               ReferencedContainer = "container:VISPERS-Wireframe-Protocol.xcodeproj">
+               BuildableName = "VIPERS-Wireframe-Protocol_Example.app"
+               BlueprintName = "VIPERS-Wireframe-Protocol_Example"
+               ReferencedContainer = "container:VIPERS-Wireframe-Protocol.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "VISPERS-Wireframe-Protocol_Tests.xctest"
-               BlueprintName = "VISPERS-Wireframe-Protocol_Tests"
-               ReferencedContainer = "container:VISPERS-Wireframe-Protocol.xcodeproj">
+               BuildableName = "VIPERS-Wireframe-Protocol_Tests.xctest"
+               BlueprintName = "VIPERS-Wireframe-Protocol_Tests"
+               ReferencedContainer = "container:VIPERS-Wireframe-Protocol.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "VISPERS-Wireframe-Protocol_Tests.xctest"
-               BlueprintName = "VISPERS-Wireframe-Protocol_Tests"
-               ReferencedContainer = "container:VISPERS-Wireframe-Protocol.xcodeproj">
+               BuildableName = "VIPERS-Wireframe-Protocol_Tests.xctest"
+               BlueprintName = "VIPERS-Wireframe-Protocol_Tests"
+               ReferencedContainer = "container:VIPERS-Wireframe-Protocol.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "VISPERS-Wireframe-Protocol_Example.app"
-            BlueprintName = "VISPERS-Wireframe-Protocol_Example"
-            ReferencedContainer = "container:VISPERS-Wireframe-Protocol.xcodeproj">
+            BuildableName = "VIPERS-Wireframe-Protocol_Example.app"
+            BlueprintName = "VIPERS-Wireframe-Protocol_Example"
+            ReferencedContainer = "container:VIPERS-Wireframe-Protocol.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "VISPERS-Wireframe-Protocol_Example.app"
-            BlueprintName = "VISPERS-Wireframe-Protocol_Example"
-            ReferencedContainer = "container:VISPERS-Wireframe-Protocol.xcodeproj">
+            BuildableName = "VIPERS-Wireframe-Protocol_Example.app"
+            BlueprintName = "VIPERS-Wireframe-Protocol_Example"
+            ReferencedContainer = "container:VIPERS-Wireframe-Protocol.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -99,9 +99,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "VISPERS-Wireframe-Protocol_Example.app"
-            BlueprintName = "VISPERS-Wireframe-Protocol_Example"
-            ReferencedContainer = "container:VISPERS-Wireframe-Protocol.xcodeproj">
+            BuildableName = "VIPERS-Wireframe-Protocol_Example.app"
+            BlueprintName = "VIPERS-Wireframe-Protocol_Example"
+            ReferencedContainer = "container:VIPERS-Wireframe-Protocol.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

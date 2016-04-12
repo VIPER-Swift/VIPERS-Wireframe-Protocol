@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  VISPERS-Wireframe-Protocol
+//  VIPERS-Wireframe-Protocol
 //
-//  Created by Jan Bartel on 04/11/2016.
+//  Created by Jan Bartel on 04/12/2016.
 //  Copyright (c) 2016 Jan Bartel. All rights reserved.
 //
 
@@ -12,12 +12,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let navigationController = UINavigationController()
-        
-        
-        
-        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

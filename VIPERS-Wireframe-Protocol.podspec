@@ -1,14 +1,6 @@
-#
-# Be sure to run `pod lib lint VISPERS-Wireframe-Protocol.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = "VIPERS-Wireframe-Protocol"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Wireframe / router implementation - Protocols used by VISPERS."
 
   s.description      = <<-DESC
@@ -20,7 +12,6 @@ The wireframe is responsible for navigating to the next view controller and comm
                        DESC
 
   s.homepage         = "https://github.com/VIPER-Swift/VIPERS-Wireframe-Protocol"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Jan Bartel" => "barteljan@yahoo.de" }
   s.source           = { :git => "https://github.com/VIPER-Swift/VIPERS-Wireframe-Protocol.git", :tag => s.version.to_s }

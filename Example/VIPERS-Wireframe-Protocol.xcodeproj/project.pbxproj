@@ -10,7 +10,21 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>03535567F0482432240F662F</key>
+		<key>13C60EC922669FAEF094B2F3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4A54DEDB5B78E0B32B9C6F7E</string>
+				<string>DC199BC5CD8390AA624825C2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>328C14B02D3B4DED13910095</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
@@ -21,7 +35,7 @@
 			<key>isa</key>
 			<string>PBXShellScriptBuildPhase</string>
 			<key>name</key>
-			<string>Embed Pods Frameworks</string>
+			<string>Copy Pods Resources</string>
 			<key>outputPaths</key>
 			<array/>
 			<key>runOnlyForDeploymentPostprocessing</key>
@@ -29,12 +43,12 @@
 			<key>shellPath</key>
 			<string>/bin/sh</string>
 			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-VIPERS-Wireframe-Protocol_Tests/Pods-VIPERS-Wireframe-Protocol_Tests-frameworks.sh"
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-VIPERS-Wireframe-Protocol_Tests/Pods-VIPERS-Wireframe-Protocol_Tests-resources.sh"
 </string>
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
-		<key>0BFB36D8E56F1F8FE187BE65</key>
+		<key>35A5FF7928F77F46A476A554</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
@@ -58,14 +72,7 @@
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
-		<key>0F74EA4E85C46986FD49B806</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7919EC2A3EB6797486DB8124</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2891FA26DFA17E61F8AAFE6B</key>
+		<key>3915593E57D4F2CF03DBA5D0</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -74,54 +81,35 @@
 			<key>lastKnownFileType</key>
 			<string>text.xcconfig</string>
 			<key>name</key>
-			<string>Pods-VIPERS-Wireframe-Protocol_Example.debug.xcconfig</string>
+			<string>Pods-VIPERS-Wireframe-Protocol_Tests.debug.xcconfig</string>
 			<key>path</key>
-			<string>Pods/Target Support Files/Pods-VIPERS-Wireframe-Protocol_Example/Pods-VIPERS-Wireframe-Protocol_Example.debug.xcconfig</string>
+			<string>Pods/Target Support Files/Pods-VIPERS-Wireframe-Protocol_Tests/Pods-VIPERS-Wireframe-Protocol_Tests.debug.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2A5C6B2075F9BE0735437872</key>
+		<key>4A54DEDB5B78E0B32B9C6F7E</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>2891FA26DFA17E61F8AAFE6B</string>
-				<string>3AFEFC7F85DE0CAAB3F539B8</string>
-				<string>708C700468FD5F41D01C3ED0</string>
-				<string>D922E6F7D7D0AFCD18D90E11</string>
-			</array>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_VIPERS_Wireframe_Protocol_Example.framework</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>3AFEFC7F85DE0CAAB3F539B8</key>
+		<key>6073D3EA6D183A3A788E22E1</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
 			<key>name</key>
-			<string>Pods-VIPERS-Wireframe-Protocol_Example.release.xcconfig</string>
+			<string>README.md</string>
 			<key>path</key>
-			<string>Pods/Target Support Files/Pods-VIPERS-Wireframe-Protocol_Example/Pods-VIPERS-Wireframe-Protocol_Example.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>43CC75A047BA295053F7074E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FF1A707D87ACA274C8687850</string>
-				<string>7919EC2A3EB6797486DB8124</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
+			<string>../README.md</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -133,8 +121,8 @@
 				<string>607FACD21AFB9204008FA782</string>
 				<string>607FACE81AFB9204008FA782</string>
 				<string>607FACD11AFB9204008FA782</string>
-				<string>2A5C6B2075F9BE0735437872</string>
-				<string>43CC75A047BA295053F7074E</string>
+				<string>B3DE7112A3D255D8445DA201</string>
+				<string>13C60EC922669FAEF094B2F3</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -232,7 +220,7 @@
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>E304AD60B4C6B66268771F95</string>
+				<string>80A9FBC3D56E6974B1146BFA</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -245,11 +233,9 @@
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>9A786A051CBCE3C1007FB861</string>
 				<string>607FACDB1AFB9204008FA782</string>
 				<string>607FACE01AFB9204008FA782</string>
 				<string>607FACDD1AFB9204008FA782</string>
-				<string>9A8272F61CBC488500332189</string>
 			</array>
 			<key>isa</key>
 			<string>PBXResourcesBuildPhase</string>
@@ -262,12 +248,12 @@
 			<string>607FACEF1AFB9204008FA782</string>
 			<key>buildPhases</key>
 			<array>
-				<string>EEEB15BA3891FA66386569A9</string>
+				<string>64BEE923005070B4F3E9EECE</string>
 				<string>607FACCC1AFB9204008FA782</string>
 				<string>607FACCD1AFB9204008FA782</string>
 				<string>607FACCE1AFB9204008FA782</string>
-				<string>D8C25684099A567ADC918AB6</string>
-				<string>0BFB36D8E56F1F8FE187BE65</string>
+				<string>DBBD24D44A1CC589D086CC5A</string>
+				<string>35A5FF7928F77F46A476A554</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -278,7 +264,7 @@
 			<key>name</key>
 			<string>VIPERS-Wireframe-Protocol_Example</string>
 			<key>productName</key>
-			<string>VISPERS-Wireframe-Protocol</string>
+			<string>VIPERS-Wireframe-Protocol</string>
 			<key>productReference</key>
 			<string>607FACD01AFB9204008FA782</string>
 			<key>productType</key>
@@ -315,7 +301,6 @@
 		<dict>
 			<key>children</key>
 			<array>
-				<string>9A8272F51CBC488500332189</string>
 				<string>607FACD51AFB9204008FA782</string>
 				<string>607FACD71AFB9204008FA782</string>
 				<string>607FACD91AFB9204008FA782</string>
@@ -326,9 +311,9 @@
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Example for VISPERS-Wireframe-Protocol</string>
+			<string>Example for VIPERS-Wireframe-Protocol</string>
 			<key>path</key>
-			<string>VISPERS-Wireframe-Protocol</string>
+			<string>VIPERS-Wireframe-Protocol</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -495,7 +480,7 @@
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>0F74EA4E85C46986FD49B806</string>
+				<string>8C8127851F56E0314720A837</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -519,12 +504,12 @@
 			<string>607FACF21AFB9204008FA782</string>
 			<key>buildPhases</key>
 			<array>
-				<string>60B3BD5B52992F067E00796D</string>
+				<string>C3BCD3664F9E53433FF52E04</string>
 				<string>607FACE11AFB9204008FA782</string>
 				<string>607FACE21AFB9204008FA782</string>
 				<string>607FACE31AFB9204008FA782</string>
-				<string>03535567F0482432240F662F</string>
-				<string>FB0693651CF265FEBF31FDD5</string>
+				<string>9F0D10BE84A3859C07C87EC1</string>
+				<string>328C14B02D3B4DED13910095</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -567,7 +552,7 @@
 			<key>remoteGlobalIDString</key>
 			<string>607FACCF1AFB9204008FA782</string>
 			<key>remoteInfo</key>
-			<string>VISPERS-Wireframe-Protocol</string>
+			<string>VIPERS-Wireframe-Protocol</string>
 		</dict>
 		<key>607FACE71AFB9204008FA782</key>
 		<dict>
@@ -808,13 +793,13 @@
 		<key>607FACF01AFB9204008FA782</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>2891FA26DFA17E61F8AAFE6B</string>
+			<string>DFEDA543370A7139D1D95B2F</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
 				<string>AppIcon</string>
 				<key>INFOPLIST_FILE</key>
-				<string>VISPERS-Wireframe-Protocol/Info.plist</string>
+				<string>VIPERS-Wireframe-Protocol/Info.plist</string>
 				<key>LD_RUNPATH_SEARCH_PATHS</key>
 				<string>$(inherited) @executable_path/Frameworks</string>
 				<key>MODULE_NAME</key>
@@ -832,13 +817,13 @@
 		<key>607FACF11AFB9204008FA782</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>3AFEFC7F85DE0CAAB3F539B8</string>
+			<string>824EA4FAFD1C0A4405DF9FD3</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
 				<string>AppIcon</string>
 				<key>INFOPLIST_FILE</key>
-				<string>VISPERS-Wireframe-Protocol/Info.plist</string>
+				<string>VIPERS-Wireframe-Protocol/Info.plist</string>
 				<key>LD_RUNPATH_SEARCH_PATHS</key>
 				<string>$(inherited) @executable_path/Frameworks</string>
 				<key>MODULE_NAME</key>
@@ -870,7 +855,7 @@
 		<key>607FACF31AFB9204008FA782</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>708C700468FD5F41D01C3ED0</string>
+			<string>3915593E57D4F2CF03DBA5D0</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>FRAMEWORK_SEARCH_PATHS</key>
@@ -900,7 +885,7 @@
 		<key>607FACF41AFB9204008FA782</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>D922E6F7D7D0AFCD18D90E11</string>
+			<string>B426B1B6E68473BC60A0EB4B</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>FRAMEWORK_SEARCH_PATHS</key>
@@ -926,9 +911,9 @@
 		<dict>
 			<key>children</key>
 			<array>
-				<string>9A786A041CBCE3C1007FB861</string>
-				<string>83B7DCD594EE4873C250FEF1</string>
-				<string>7C944E1822E93BC523D2AE81</string>
+				<string>EEB064FDD43C7DA6315C47E8</string>
+				<string>6073D3EA6D183A3A788E22E1</string>
+				<string>91C43DE18DAFA1020AB582B8</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -937,7 +922,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>60B3BD5B52992F067E00796D</key>
+		<key>64BEE923005070B4F3E9EECE</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
@@ -967,7 +952,14 @@ fi
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
-		<key>708C700468FD5F41D01C3ED0</key>
+		<key>80A9FBC3D56E6974B1146BFA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4A54DEDB5B78E0B32B9C6F7E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>824EA4FAFD1C0A4405DF9FD3</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -976,33 +968,25 @@ fi
 			<key>lastKnownFileType</key>
 			<string>text.xcconfig</string>
 			<key>name</key>
-			<string>Pods-VIPERS-Wireframe-Protocol_Tests.debug.xcconfig</string>
+			<string>Pods-VIPERS-Wireframe-Protocol_Example.release.xcconfig</string>
 			<key>path</key>
-			<string>Pods/Target Support Files/Pods-VIPERS-Wireframe-Protocol_Tests/Pods-VIPERS-Wireframe-Protocol_Tests.debug.xcconfig</string>
+			<string>Pods/Target Support Files/Pods-VIPERS-Wireframe-Protocol_Example/Pods-VIPERS-Wireframe-Protocol_Example.release.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7919EC2A3EB6797486DB8124</key>
+		<key>8C8127851F56E0314720A837</key>
 		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
+			<key>fileRef</key>
+			<string>DC199BC5CD8390AA624825C2</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_VIPERS_Wireframe_Protocol_Tests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
+			<string>PBXBuildFile</string>
 		</dict>
-		<key>7C944E1822E93BC523D2AE81</key>
+		<key>91C43DE18DAFA1020AB582B8</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
 			<key>name</key>
 			<string>LICENSE</string>
 			<key>path</key>
@@ -1010,60 +994,92 @@ fi
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>83B7DCD594EE4873C250FEF1</key>
+		<key>9F0D10BE84A3859C07C87EC1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-VIPERS-Wireframe-Protocol_Tests/Pods-VIPERS-Wireframe-Protocol_Tests-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>B3DE7112A3D255D8445DA201</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DFEDA543370A7139D1D95B2F</string>
+				<string>824EA4FAFD1C0A4405DF9FD3</string>
+				<string>3915593E57D4F2CF03DBA5D0</string>
+				<string>B426B1B6E68473BC60A0EB4B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B426B1B6E68473BC60A0EB4B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>net.daringfireball.markdown</string>
+			<string>text.xcconfig</string>
 			<key>name</key>
-			<string>README.md</string>
+			<string>Pods-VIPERS-Wireframe-Protocol_Tests.release.xcconfig</string>
 			<key>path</key>
-			<string>../README.md</string>
+			<string>Pods/Target Support Files/Pods-VIPERS-Wireframe-Protocol_Tests/Pods-VIPERS-Wireframe-Protocol_Tests.release.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>9A786A041CBCE3C1007FB861</key>
+		<key>C3BCD3664F9E53433FF52E04</key>
 		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>VIPERS-Wireframe-Protocol.podspec</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
 		</dict>
-		<key>9A786A051CBCE3C1007FB861</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9A786A041CBCE3C1007FB861</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9A8272F51CBC488500332189</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>viper-architecture.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9A8272F61CBC488500332189</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9A8272F51CBC488500332189</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D8C25684099A567ADC918AB6</key>
+		<key>DBBD24D44A1CC589D086CC5A</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
@@ -1087,83 +1103,7 @@ fi
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
-		<key>D922E6F7D7D0AFCD18D90E11</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-VIPERS-Wireframe-Protocol_Tests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-VIPERS-Wireframe-Protocol_Tests/Pods-VIPERS-Wireframe-Protocol_Tests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E304AD60B4C6B66268771F95</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FF1A707D87ACA274C8687850</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EEEB15BA3891FA66386569A9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>FB0693651CF265FEBF31FDD5</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-VIPERS-Wireframe-Protocol_Tests/Pods-VIPERS-Wireframe-Protocol_Tests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>FF1A707D87ACA274C8687850</key>
+		<key>DC199BC5CD8390AA624825C2</key>
 		<dict>
 			<key>explicitFileType</key>
 			<string>wrapper.framework</string>
@@ -1172,9 +1112,37 @@ fi
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>path</key>
-			<string>Pods_VIPERS_Wireframe_Protocol_Example.framework</string>
+			<string>Pods_VIPERS_Wireframe_Protocol_Tests.framework</string>
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>DFEDA543370A7139D1D95B2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-VIPERS-Wireframe-Protocol_Example.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-VIPERS-Wireframe-Protocol_Example/Pods-VIPERS-Wireframe-Protocol_Example.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EEB064FDD43C7DA6315C47E8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>VIPERS-Wireframe-Protocol.podspec</string>
+			<key>path</key>
+			<string>../VIPERS-Wireframe-Protocol.podspec</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>

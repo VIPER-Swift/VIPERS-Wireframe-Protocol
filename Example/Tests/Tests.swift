@@ -1,6 +1,6 @@
 import UIKit
 import XCTest
-import VISPERS-Wireframe-Protocol
+import VIPERS_Wireframe_Protocol
 
 class Tests: XCTestCase {
     
