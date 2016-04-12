@@ -11,7 +11,7 @@ import Foundation
 /**
  * ControllerProvider: a provider creating a view controller for a specific URL
  **/
-public public ControllerProviderProtocol{
+public protocol ControllerProviderProtocol{
 
 
     func controller( forRouteString : String,
