@@ -17,7 +17,7 @@ import Foundation
 public protocol RoutingOptionProviderProtocol{
    
     func options( forRoutingString : String,
-                        parameters : [String,NSObject],
+                  parameters : [String : NSObject],
                       currentOption: RoutingOptionProtocol?) -> RoutingOptionProtocol?
 
     

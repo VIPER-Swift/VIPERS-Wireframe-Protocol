@@ -59,7 +59,7 @@ public protocol WireframeProtocol{
     /**
      * Returns the controller connected to a given URL
      */
-    func controllerFor(URL:NSURL,[String:AnyObject]?) -> UIViewController
+    func controllerFor(URL:NSURL,parameters:[String:AnyObject]?) -> UIViewController
 
 
     /**
