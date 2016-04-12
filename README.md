@@ -16,7 +16,7 @@ The wireframe is responsible for navigating to the next view controller and comm
 VIPER is an application architecture for mobile app development.
 You can find some explanations here: [Blogpost from objc.io] (https://www.objc.io/issues/13-architecture/viper/)  (It's example is written in OBJ-C but I think you will accept this as your next challenge :-P)
 
-##Short explanation of the players in the wireframe layer
+##Short explanation for the players in the wireframe layer
 
 ### ControllerProvider
 
@@ -24,7 +24,7 @@ A provider-class reponsible for creating a view controller for a specific URL
 
 Example:
 ```swift
-class ExampleControllerProvider : {
+class ExampleControllerProvider : ControllerProviderProtocol {
     
     let responsibleForRoutesCreatedWithRouteString = "/path/to/my/controller"
 
@@ -53,6 +53,53 @@ wireframe.routeURL(       URL: NSURL(string:"/path/to/my/controller"),
                        option: RoutingOptionPush())
 
 ```
+
+### Routing option provider
+
+A routing option provider is responsible for creating a RoutingOption 
+for a specific URL. By creating a specific RoutingOption for an URL a RoutingOptionProvider can decide in which way a controller should be presented
+
+Example:
+```swift
+class ExampleRoutingOptionsProvider : RoutingOptionProviderProtocol {
+
+    let responsibleForRoutesCreatedWithRouteString = "/path/to/my/controller"
+
+    func options( forRoutingString: String,
+                        parameters: [String,NSObject],
+                     currentOption: RoutingOptionProtocol?) -> RoutingOptionProtocol?{
+
+        // if someone has already created a routing option, use that 
+        // (don't override it if this is not nessecary!)
+        if let currentRoutingOption = currentOption{
+            return currentRoutingOption
+        }else{
+            //create a new object conforming to RoutingOptionProtocol otherwise
+            return RoutingOptionPush()
+        }
+
+    }
+
+}
+
+// somewhere in your application (appdelegate or a factory could be a good idea)
+// add provider to wireframe 
+let myProvider = ExampleRoutingOptionsProvider()
+wireframe.addRoutingProvider(provider:myProvider)
+
+//
+// I suppose that you added a controller provider for your 
+// route somewhere
+//
+
+//route to controller and present it
+wireframe.routeURL(        URL: NSURL(string:"/path/to/my/controller"),
+                    parameters: nil,
+                        option: nil)
+
+```
+
+
 
 ## Usage
 
