@@ -13,9 +13,12 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		710E9D40F95EF8C618E1A8BE /* Pods_VIPERS_Wireframe_Protocol_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A257A83CA53BB75DD21B28D /* Pods_VIPERS_Wireframe_Protocol_Tests.framework */; };
 		72214D9F587F3D0D99B1E088 /* Pods_VISPERS_Wireframe_Protocol_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB157E3F2C57648C852C0E8 /* Pods_VISPERS_Wireframe_Protocol_Example.framework */; };
 		94C78C59A3103D8E781FD2CB /* Pods_VISPERS_Wireframe_Protocol_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C6D0F50D91FC8D763322EC /* Pods_VISPERS_Wireframe_Protocol_Tests.framework */; };
+		9A786A051CBCE3C1007FB861 /* VIPERS-Wireframe-Protocol.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 9A786A041CBCE3C1007FB861 /* VIPERS-Wireframe-Protocol.podspec */; };
 		9A8272F61CBC488500332189 /* viper-architecture.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A8272F51CBC488500332189 /* viper-architecture.png */; };
+		E398B998C0286E284B4B6459 /* Pods_VIPERS_Wireframe_Protocol_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC7BF557E9D07ECE87D9151 /* Pods_VIPERS_Wireframe_Protocol_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,21 +33,23 @@
 
 /* Begin PBXFileReference section */
 		3FB157E3F2C57648C852C0E8 /* Pods_VISPERS_Wireframe_Protocol_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VISPERS_Wireframe_Protocol_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		551DBCB750087B60113E4716 /* VISPERS-Wireframe-Protocol.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "VISPERS-Wireframe-Protocol.podspec"; path = "../VISPERS-Wireframe-Protocol.podspec"; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* VISPERS-Wireframe-Protocol_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VISPERS-Wireframe-Protocol_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD01AFB9204008FA782 /* VIPERS-Wireframe-Protocol_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPERS-Wireframe-Protocol_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* VISPERS-Wireframe-Protocol_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VISPERS-Wireframe-Protocol_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* VIPERS-Wireframe-Protocol_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIPERS-Wireframe-Protocol_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6A6EC50B3181421A724FF717 /* Pods-VISPERS-Wireframe-Protocol_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VISPERS-Wireframe-Protocol_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-VISPERS-Wireframe-Protocol_Example/Pods-VISPERS-Wireframe-Protocol_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6EB4403DB1F2AD4FECF7C5FB /* Pods-VISPERS-Wireframe-Protocol_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VISPERS-Wireframe-Protocol_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VISPERS-Wireframe-Protocol_Tests/Pods-VISPERS-Wireframe-Protocol_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C944E1822E93BC523D2AE81 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		83B7DCD594EE4873C250FEF1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8BC7BF557E9D07ECE87D9151 /* Pods_VIPERS_Wireframe_Protocol_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPERS_Wireframe_Protocol_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A257A83CA53BB75DD21B28D /* Pods_VIPERS_Wireframe_Protocol_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPERS_Wireframe_Protocol_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A786A041CBCE3C1007FB861 /* VIPERS-Wireframe-Protocol.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "VIPERS-Wireframe-Protocol.podspec"; sourceTree = "<group>"; };
 		9A8272F51CBC488500332189 /* viper-architecture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "viper-architecture.png"; sourceTree = "<group>"; };
 		A59B0CE61C9DBA2C0E4A6F44 /* Pods-VISPERS-Wireframe-Protocol_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VISPERS-Wireframe-Protocol_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VISPERS-Wireframe-Protocol_Tests/Pods-VISPERS-Wireframe-Protocol_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B460E3D3EB9432814532CCC2 /* Pods-VISPERS-Wireframe-Protocol_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VISPERS-Wireframe-Protocol_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VISPERS-Wireframe-Protocol_Example/Pods-VISPERS-Wireframe-Protocol_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -57,6 +62,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72214D9F587F3D0D99B1E088 /* Pods_VISPERS_Wireframe_Protocol_Example.framework in Frameworks */,
+				E398B998C0286E284B4B6459 /* Pods_VIPERS_Wireframe_Protocol_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94C78C59A3103D8E781FD2CB /* Pods_VISPERS_Wireframe_Protocol_Tests.framework in Frameworks */,
+				710E9D40F95EF8C618E1A8BE /* Pods_VIPERS_Wireframe_Protocol_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,8 +93,8 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* VISPERS-Wireframe-Protocol_Example.app */,
-				607FACE51AFB9204008FA782 /* VISPERS-Wireframe-Protocol_Tests.xctest */,
+				607FACD01AFB9204008FA782 /* VIPERS-Wireframe-Protocol_Example.app */,
+				607FACE51AFB9204008FA782 /* VIPERS-Wireframe-Protocol_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,7 +142,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				551DBCB750087B60113E4716 /* VISPERS-Wireframe-Protocol.podspec */,
+				9A786A041CBCE3C1007FB861 /* VIPERS-Wireframe-Protocol.podspec */,
 				83B7DCD594EE4873C250FEF1 /* README.md */,
 				7C944E1822E93BC523D2AE81 /* LICENSE */,
 			);
@@ -158,6 +165,8 @@
 			children = (
 				3FB157E3F2C57648C852C0E8 /* Pods_VISPERS_Wireframe_Protocol_Example.framework */,
 				F3C6D0F50D91FC8D763322EC /* Pods_VISPERS_Wireframe_Protocol_Tests.framework */,
+				8BC7BF557E9D07ECE87D9151 /* Pods_VIPERS_Wireframe_Protocol_Example.framework */,
+				9A257A83CA53BB75DD21B28D /* Pods_VIPERS_Wireframe_Protocol_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,9 +174,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* VISPERS-Wireframe-Protocol_Example */ = {
+		607FACCF1AFB9204008FA782 /* VIPERS-Wireframe-Protocol_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "VISPERS-Wireframe-Protocol_Example" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "VIPERS-Wireframe-Protocol_Example" */;
 			buildPhases = (
 				BFF38F149AA1771F79074EF9 /* Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
@@ -180,14 +189,14 @@
 			);
 			dependencies = (
 			);
-			name = "VISPERS-Wireframe-Protocol_Example";
+			name = "VIPERS-Wireframe-Protocol_Example";
 			productName = "VISPERS-Wireframe-Protocol";
-			productReference = 607FACD01AFB9204008FA782 /* VISPERS-Wireframe-Protocol_Example.app */;
+			productReference = 607FACD01AFB9204008FA782 /* VIPERS-Wireframe-Protocol_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		607FACE41AFB9204008FA782 /* VISPERS-Wireframe-Protocol_Tests */ = {
+		607FACE41AFB9204008FA782 /* VIPERS-Wireframe-Protocol_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "VISPERS-Wireframe-Protocol_Tests" */;
+			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "VIPERS-Wireframe-Protocol_Tests" */;
 			buildPhases = (
 				916CE1919A21DF9250B05445 /* Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
@@ -201,9 +210,9 @@
 			dependencies = (
 				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
 			);
-			name = "VISPERS-Wireframe-Protocol_Tests";
+			name = "VIPERS-Wireframe-Protocol_Tests";
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* VISPERS-Wireframe-Protocol_Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* VIPERS-Wireframe-Protocol_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -225,7 +234,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "VISPERS-Wireframe-Protocol" */;
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "VIPERS-Wireframe-Protocol" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -238,8 +247,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* VISPERS-Wireframe-Protocol_Example */,
-				607FACE41AFB9204008FA782 /* VISPERS-Wireframe-Protocol_Tests */,
+				607FACCF1AFB9204008FA782 /* VIPERS-Wireframe-Protocol_Example */,
+				607FACE41AFB9204008FA782 /* VIPERS-Wireframe-Protocol_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A786A051CBCE3C1007FB861 /* VIPERS-Wireframe-Protocol.podspec in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -278,7 +288,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VISPERS-Wireframe-Protocol_Example/Pods-VISPERS-Wireframe-Protocol_Example-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIPERS-Wireframe-Protocol_Example/Pods-VIPERS-Wireframe-Protocol_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		916CE1919A21DF9250B05445 /* Check Pods Manifest.lock */ = {
@@ -308,7 +318,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VISPERS-Wireframe-Protocol_Tests/Pods-VISPERS-Wireframe-Protocol_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIPERS-Wireframe-Protocol_Tests/Pods-VIPERS-Wireframe-Protocol_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A96B077A5B5E7126729D9B69 /* Copy Pods Resources */ = {
@@ -323,7 +333,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VISPERS-Wireframe-Protocol_Tests/Pods-VISPERS-Wireframe-Protocol_Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIPERS-Wireframe-Protocol_Tests/Pods-VIPERS-Wireframe-Protocol_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BFF38F149AA1771F79074EF9 /* Check Pods Manifest.lock */ = {
@@ -353,7 +363,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VISPERS-Wireframe-Protocol_Example/Pods-VISPERS-Wireframe-Protocol_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIPERS-Wireframe-Protocol_Example/Pods-VIPERS-Wireframe-Protocol_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -381,7 +391,7 @@
 /* Begin PBXTargetDependency section */
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* VISPERS-Wireframe-Protocol_Example */;
+			target = 607FACCF1AFB9204008FA782 /* VIPERS-Wireframe-Protocol_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -551,7 +561,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "VISPERS-Wireframe-Protocol" */ = {
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "VIPERS-Wireframe-Protocol" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
@@ -560,7 +570,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "VISPERS-Wireframe-Protocol_Example" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "VIPERS-Wireframe-Protocol_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
@@ -569,7 +579,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "VISPERS-Wireframe-Protocol_Tests" */ = {
+		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "VIPERS-Wireframe-Protocol_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,

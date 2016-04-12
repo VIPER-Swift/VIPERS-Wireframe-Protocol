@@ -1,12 +1,12 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'VISPERS-Wireframe-Protocol_Example', :exclusive => true do
-  pod 'VISPERS-Wireframe-Protocol', :path => '../'
+target 'VIPERS-Wireframe-Protocol_Example', :exclusive => true do
+  pod 'VIPERS-Wireframe-Protocol', :path => '../'
 end
 
-target 'VISPERS-Wireframe-Protocol_Tests', :exclusive => true do
-  pod 'VISPERS-Wireframe-Protocol', :path => '../'
+target 'VIPERS-Wireframe-Protocol_Tests', :exclusive => true do
+  pod 'VIPERS-Wireframe-Protocol', :path => '../'
 
   
 end
