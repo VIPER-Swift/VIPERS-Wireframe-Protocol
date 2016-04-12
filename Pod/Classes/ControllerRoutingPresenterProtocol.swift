@@ -13,18 +13,19 @@ import Foundation
  * a controller with a specific RoutingOption
  **/
 public protocol ControllerRoutingPresenterProtocol{
- 
+
+    func setRootViewController(controller: UIViewController)
+    func rootViewController() -> UIViewController?
+    
     func isResponsible(option:RoutingOptionProtocol) -> Bool
+    
+    func rootViewControllerInjectable(controller: UIViewController)->Bool
     
     func present(routeString : String,
                   controller : UIViewController,
                       option : RoutingOptionProtocol,
                   parameters : [String : AnyObject],
                    wireframe : WireframeProtocol,
-                   completion: ((routeString : String,
-                                  controller : UIViewController,
-                                     option  : RoutingOptionProtocol,
-                                  parameters : [String : AnyObject],
-                                   wireframe : WireframeProtocol)->Void))
+                   completion: (()->Void))
 
 }

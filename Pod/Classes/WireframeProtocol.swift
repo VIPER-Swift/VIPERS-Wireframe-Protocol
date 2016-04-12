@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 /**
  * The wireframe is the powerful thing that wires the view controllers in 
  * your app together.
@@ -53,7 +55,7 @@ public protocol WireframeProtocol{
      **/
     func routeURL(URL:NSURL)
     func routeURL(URL:NSURL,parameters:[String:AnyObject]?)
-    func routeURL(URL:NSURL,parameters:[String:AnyObject]?,option:RoutingOptionProtocol)
+    func routeURL(URL:NSURL,parameters:[String:AnyObject]?,option:RoutingOptionProtocol?)
     
 
     /**
@@ -79,15 +81,7 @@ public protocol WireframeProtocol{
      * Add a controller provider, responsible for creating a view controller
      * for a specific NSURL
      **/
-    func addControllerProvider(provider: ControllerProviderProtocol)
-
-    
-    /**
-     * Remove a controller provider, responsible for creating a view controller
-     * for a specific NSURL
-     **/
-     func removeControllerProvider(provider: ControllerProviderProtocol)-> Bool
-
+     func addControllerProvider(provider: ControllerProviderProtocol)
 
      /**
       * Returns all registered controller providers
@@ -111,13 +105,6 @@ public protocol WireframeProtocol{
 
 
      /**
-      * Remove a RoutingOptionProvider, responsible for creating a RoutingOption for
-      * a specific URL
-      **/
-     func removeRoutingOptionProvider(provider:RoutingOptionProviderProtocol) -> Bool
-
-
-     /**
       * Returns  all registered routing option providers
       **/
      func routingOptionProviders() -> [RoutingOptionProviderProtocol]
@@ -133,20 +120,21 @@ public protocol WireframeProtocol{
      * Add a ControllerRoutingPresenter, responsible for presenting controllers with
      * a specific RoutingOption
      **/
-     func addControllerRoutingPresenter(presenter: ControllerRoutingPresenterProtocol)
-
-
+    func addControllerRoutingPresenter<T : RoutingPresenterWithRootViewControllerProtocol>(presenter: T)
+    
+    
     /**
-     * Remove a ControllerRoutingPresenter, responsible for presenting controllers 
-     * with a specific RoutingOption
-     **/
-     func removeControllerRoutingPresenter(presenter: ControllerRoutingPresenterProtocol) -> Bool
-
+     * set root view controller to all routing presenters using a rootController of this type
+     */
+    func setControllerRoutingPresenterRootController<T : UIViewController>(controller : T)
+    
+    
     /**
      * Returns all registered ControllerRoutingPresenters
      **/
-    func controllerRoutingPresenters()->[ControllerRoutingPresenterProtocol]
+    func controllerRoutingPresenters() -> [ControllerRoutingPresenterProtocol]
 
+    
     /**
      * RoutingObserver: an observer object for observing the routing process
      **/
@@ -157,16 +145,10 @@ public protocol WireframeProtocol{
       **/
      func addRoutingObserver(observer:RoutingObserverProtocol)
 
-    
-     /**
-      * Remove a RoutingObserver an observer object for observing the routing process
-      **/
-     func removeRoutingObserver(observer:RoutingObserverProtocol) -> Bool
-
 
      /**
       * Returns all routing observers
       **/
      func routingObserver()->[RoutingObserverProtocol]
-
+    
 }

@@ -16,8 +16,8 @@ import Foundation
 public protocol RoutingObserverProtocol{
     
     func observes(routeString: String,
-                  option: RoutingOptionProtocol,
-                  parameters: [String : AnyObject])->Bool
+                  option: RoutingOptionProtocol?,
+                  parameters: [String : AnyObject]?)->Bool
     
     
     func shouldRouteTo(routeString: String,
@@ -28,6 +28,8 @@ public protocol RoutingObserverProtocol{
                  routeString: String,
                       option: RoutingOptionProtocol,
                   parameters: [String : AnyObject],
-            routingPresenter: ControllerRoutingPresenterProtocol,
                    wireframe: WireframeProtocol) -> Void
+    
+    func error(wireframe: WireframeProtocol, error: ErrorType)
+    
 }
