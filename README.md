@@ -14,7 +14,7 @@ The wireframe is responsible for navigating to the next view controller and comm
 
 ## More about VIPER
 VIPER is an application architecture for mobile app development.
-You can find some explanations here: [Blogpost from objc.io] (https://www.objc.io/issues/13-architecture/viper/)  (It's example is written in OBJ-C but I think you will accept this as your next challenge :-P)
+You can find some explanations here: [Blogpost from objc.io] (https://www.objc.io/issues/13-architecture/viper/)  (It's example is written in OBJ-C but I think you will accept this as a challenge :-P)
 
 ##Short explanation for the players in the wireframe layer
 
