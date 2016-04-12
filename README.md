@@ -173,6 +173,72 @@ wireframe.routeURL(       URL: NSURL(string:"/path/to/my/controller"),
 
 ```
 
+### Routing Observer
+
+An observer object for observing the routing process. It can intercept and redirect your routing request when returning an NSURL in it's shouldRouteTo - Method.
+
+Example for redirecting when not logged in:
+```swift
+
+//
+// lets assume you have a fancy class named LoginManager which tells you 
+// if you are logged in for a specific url
+//
+
+
+//
+// Create routing observer
+//
+class AuthRoutingObserver : RoutingObserverProtocol{
+
+    let loginManager : LoginManager
+
+    init(loginManager : LoginManager){
+        self.loginManager = loginManager
+    }
+
+    func observes(routeString: String,
+                       option: RoutingOptionProtocol,
+                   parameters: [String : AnyObject])->Bool{
+        return true
+    }
+
+
+    func shouldRouteTo(routeString: String,
+                            option: RoutingOptionProtocol,
+                        parameters: [String : AnyObject]) -> NSURL?{
+        if(loginManager.allowsRoutingForRouteString(routeString)){
+            return nil
+        }else{
+            return NSURL("/path/to/access/denied/controller")
+        }
+    }
+
+    func didRouteTo( controller: UIViewController,
+                    routeString: String,
+                         option: RoutingOptionProtocol,
+                     parameters: [String : AnyObject],
+               routingPresenter: ControllerRoutingPresenterProtocol,
+                      wireframe: WireframeProtocol) -> Void{
+        //do something after the controller of this route is visible in your app
+    }
+}
+
+// somewhere in your application (appdelegate or a factory could be a good idea)
+// add presenter to wireframe 
+let authObserver = AuthRoutingObserver(myLoginManager)
+wireframe.addRoutingObserver(authObserver)
+
+
+// routes to "/path/to/access/denied/controller"
+// when not logged in
+wireframe.routeURL(NSURL(string: "/a/route/which/needs/login"))
+
+// works as expected
+wireframe.routeURL(NSURL(string: "/a/route/which/does/not/need/login"))
+
+
+```
 
 
 ## Usage

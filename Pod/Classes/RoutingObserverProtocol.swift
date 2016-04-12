@@ -9,14 +9,25 @@
 import Foundation
 
 /**
- * RoutingObserver: an observer object for observing the routing process
+ * RoutingObserver: an observer object for observing the routing process.
+ * It can intercept and redirect your routing request when returning an NSURL 
+ * in it's shouldRouteTo - Method.
  **/
 public protocol RoutingObserverProtocol{
+    
+    func observes(routeString: String,
+                  option: RoutingOptionProtocol,
+                  parameters: [String : AnyObject])->Bool
+    
+    
+    func shouldRouteTo(routeString: String,
+                          option: RoutingOptionProtocol,
+                      parameters: [String : AnyObject]) -> NSURL?
 
-    func routeTo( controller: UIViewController,
+    func didRouteTo( controller: UIViewController,
                  routeString: String,
                       option: RoutingOptionProtocol,
                   parameters: [String : AnyObject],
             routingPresenter: ControllerRoutingPresenterProtocol,
-                   wireframe: WireframeProtocol) -> NSURL?
+                   wireframe: WireframeProtocol) -> Void
 }
