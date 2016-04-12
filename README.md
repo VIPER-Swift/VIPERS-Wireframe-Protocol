@@ -106,6 +106,73 @@ wireframe.routeURL(        URL: NSURL(string:"/path/to/my/controller"),
 
 ```
 
+###  Controller Routing Presenter
+A presenter responsible for presenting a controller with a specific RoutingOption
+
+Example:
+```swift
+//create a new routing option for pushing with a hidden navigation bar
+struct HiddenNavbarRoutingOption : RoutingOptionPushProtocol{
+    let animated : bool
+}
+
+//create a new controller routing presenter for your option
+class HiddenNavBarRoutingPresenter : ControllerRoutingPresenterProtocol{
+
+    let navigationController : UINavigationController
+
+    init(navigationController : UINavigationController){
+        self.navigationController = navigationController
+    }
+
+    func isResponsible(option:RoutingOptionProtocol) -> Bool{
+        return option is HiddenNavbarRoutingOption
+    }
+
+    func present(routeString: String,
+                  controller: UIViewController,
+                      option: RoutingOptionProtocol,
+                 parameters : [String : AnyObject],
+                  wireframe : WireframeProtocol,
+                  completion: ((routeString : String,
+                                 controller : UIViewController,
+                                    option  : RoutingOptionProtocol,
+                                 parameters : [String : AnyObject],
+                                  wireframe : WireframeProtocol)->Void)){
+
+        self.navigationController.setNavigationBarHidden(true, animated: option.animated)
+        
+        CATransaction.begin()
+        CATransaction.setCompletionBlock {
+            completion( routeString : routeString,
+                         controller : controller,
+                             option : option,
+                         parameters : parameters,
+                          wireframe : wireframe)
+        }
+        navigationController.pushViewController(controller, animated: true)
+        CATransaction.commit()
+    }
+
+}
+
+// somewhere in your application (appdelegate or a factory could be a good idea)
+// add presenter to wireframe 
+let myPresenter = HiddenNavBarRoutingPresenter(myNavigationController)
+wireframe.addControllerRoutingPresenter(presenter)
+
+//
+// I suppose that you added a controller provider for your 
+// route somewhere
+//
+
+//route to controller and present it
+wireframe.routeURL(       URL: NSURL(string:"/path/to/my/controller"),
+                   parameters: nil,
+                       option: HiddenNavbarRoutingOption(animated : true))
+
+```
+
 
 
 ## Usage

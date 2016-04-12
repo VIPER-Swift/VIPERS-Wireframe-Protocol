@@ -116,6 +116,12 @@ public protocol WireframeProtocol{
       **/
      func removeRoutingOptionProvider(provider:RoutingOptionProviderProtocol) -> Bool
 
+
+     /**
+      * Returns  all registered routing option providers
+      **/
+     func routingOptionProviders() -> [RoutingOptionProviderProtocol]
+
     
     /**
      * ControllerRoutingPresenter: a presenter responsible for presenting 
@@ -124,18 +130,22 @@ public protocol WireframeProtocol{
 
 
     /**
-     * add a ControllerRoutingPresenter, responsible for presenting controllers with
+     * Add a ControllerRoutingPresenter, responsible for presenting controllers with
      * a specific RoutingOption
      **/
      func addControllerRoutingPresenter(presenter: ControllerRoutingPresenterProtocol)
 
 
     /**
-     * remove a ControllerRoutingPresenter, responsible for presenting controllers with
-     * a specific RoutingOption
+     * Remove a ControllerRoutingPresenter, responsible for presenting controllers 
+     * with a specific RoutingOption
      **/
      func removeControllerRoutingPresenter(presenter: ControllerRoutingPresenterProtocol) -> Bool
 
+    /**
+     * Returns all registered ControllerRoutingPresenters
+     **/
+    func controllerRoutingPresenters()->[ControllerRoutingPresenterProtocol]
 
     /**
      * RoutingObserver: an observer object for observing the routing process
@@ -152,5 +162,11 @@ public protocol WireframeProtocol{
       * Remove a RoutingObserver an observer object for observing the routing process
       **/
      func removeRoutingObserver(observer:RoutingObserverProtocol) -> Bool
+
+
+     /**
+      * Returns all routing observers
+      **/
+     func routingObserver()->[RoutingObserverProtocol]
 
 }
