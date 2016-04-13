@@ -10,7 +10,7 @@ It is the powerful thing that wires the view controllers in your app together. I
 The wireframe is responsible for navigating to the next view controller and communicates and connects all objects of the wireframe layer. It is used by the presenter layer to navigate to the next view controller. We recommend you to avoid using it in a view controller which is located in the view layer. It is better to call it from a delegate.
 
 ![VIPER Architecture]
-(https://raw.githubusercontent.com/VIPER-Swift/VISPERS-Wireframe-Protocol/master/Example/VISPERS-Wireframe-Protocol/viper-architecture.png)
+(https://raw.githubusercontent.com/VIPER-Swift/VIPERS-Wireframe-Protocol/master/Example/VIPERS-Wireframe-Protocol/viper-architecture.png)
 
 ## More about VIPER
 VIPER is an application architecture for mobile app development.

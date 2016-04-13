@@ -1,14 +1,14 @@
 PODS:
-  - VIPERS-Wireframe-Protocol (0.1.0)
+  - VIPERS-Wireframe-Protocol (0.1.1)
 
 DEPENDENCIES:
   - VIPERS-Wireframe-Protocol (from `../`)
 
 EXTERNAL SOURCES:
   VIPERS-Wireframe-Protocol:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  VIPERS-Wireframe-Protocol: f150f44cb2a665f1443e32986737fe893bef86ab
+  VIPERS-Wireframe-Protocol: 2b1a03e8e7f2268cead03ee85be2d06473fe753a
 
 COCOAPODS: 0.39.0
